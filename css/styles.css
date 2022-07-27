@@ -13,6 +13,15 @@ footer{
     height: 200px;
     background-color: #FA804C;
 }
+.nav-item > .nav-link.active{
+    color: #FA804C !important;
+}
+.nav-item .nav-link:hover{
+    color:#FA804C !important;
+}
+.nav-item .nav-link{
+    font-size: 18px;
+}
 @media only screen and (max-width: 1200px) {
     .nike-h1{
         font-size: 42px;
