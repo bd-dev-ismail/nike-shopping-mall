@@ -16,11 +16,11 @@
     <!-- Custom Css File Link -->
     <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
+  
     <!-- Start Header Section  -->
-    <header class="nike-bg container">
+    <header class="nike-bg">
         <section class="custom-nav">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-4 ">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-lg-2 ">
      
         <div class="container d-flex">
     <a class="navbar-brand" href="#">
@@ -48,8 +48,10 @@
   </div>      
     </nav>
         </section>
+        <body>
+  
         <!-- Start Slider Banner Section -->
-    <section id="banner">
+    <section id="banner" class="container mt-5">
                 <div id="carouselExampleIndicators" class="carousel carousel-dark slide " data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,8 +72,13 @@
                             </div>
                             <p class="card-text mb-lg-4">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, excepturi?..</p>
-                            <button class="btn nike-btn my-lg-4 text-white">
-                              <i class="bi bi-cart-check-fill text-white pe-2"></i>Buy Now</button>
+                            <button class="btn nike-btn my-lg-4 text-white position-relative">
+                              <i class="bi bi-cart-check-fill text-white pe-2"></i>Buy Now
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                20% Offer
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            </button>
                         </div>
                         </div>
                        
@@ -91,7 +98,13 @@
                             </div>
                             <p class="card-text mb-lg-4">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, excepturi?..</p>
-                            <button class="btn nike-btn my-lg-4 text-white"><i class="bi bi-cart-check-fill text-white pe-2"></i>Buy Now</button>
+                            <button class="btn nike-btn my-lg-4 text-white position-relative">
+                              <i class="bi bi-cart-check-fill text-white pe-2"></i>Buy Now
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                20% Offer
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            </button>
                         </div>
                         </div>
                        
@@ -111,7 +124,13 @@
                             </div>
                             <p class="card-text mb-lg-4">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, excepturi?..</p>
-                            <button class="btn nike-btn my-lg-4 text-white"><i class="bi bi-cart-check-fill text-white pe-2"></i>Buy Now</button>
+                            <button class="btn nike-btn my-lg-4 text-white position-relative">
+                              <i class="bi bi-cart-check-fill text-white pe-2"></i>Buy Now
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                20% Offer
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            </button>
                         </div>
                         </div>
                        
@@ -130,8 +149,65 @@
         </div>
     </section>
         <!-- End Slider Banner Section  -->
-    </header>
+</header>
     <!-- End Header Section -->
+  <!-- Modal Testing  -->
+    <div class="container mb-5 d-flex justify-content-evenly">
+      <!-- Button trigger modal -->
+<button type="button" class="btn nike-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Click Here To Show Modal!!
+</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">We Love our Customer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hey! Hurry Up! Get 50% On Your First Order! & Also Offer 20% only for Today.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn nike-btn">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- offcanvas testing  -->
+    <a class="btn nike-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Click Now to show Offcanvas
+</a>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Happy </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+     Hurry Up! Get 50% On Your First Order! & Also Offer 20% only for Today.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn nike-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+    
+    <!-- Alert testing  -->
+      <div class="alert alert-danger alert-dismissible fade show container" role="alert">
+  <strong class="nike-heading">Hurry Up!</strong><span class="nike-heading"> Get 50% On Your First Order! & Also Offer 20% only for Today.</span>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
     <!-- Start Casual Shoes Section  -->
     <section id="products" class="py-5">
@@ -248,7 +324,22 @@
       </div>
     </section>
     <!-- End Formal Shoes Section  -->
-
+    <!-- Pegination Testing  -->
+    <div class="container">
+      <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link nike-heading" href="#">1</a></li>
+    <li class="page-item"><a class="page-link nike-heading" href="#">2</a></li>
+    <li class="page-item"><a class="page-link nike-heading" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link nike-heading" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+    </div>
     <!-- Start About Secion  -->
     <section id="about my-5">
       <div class="container py-5">

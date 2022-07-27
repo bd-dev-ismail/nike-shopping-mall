@@ -6,7 +6,11 @@
     color: #FA804C;
 }
 .nike-btn{
-    background: #FA804C;
+    background: #FA804C !important;
+    color: #fff;
+}
+.nike-btn:hover{
+    color: #fff;
 }
 footer{
     width:100%;
