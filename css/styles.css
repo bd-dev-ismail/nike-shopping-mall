@@ -4,3 +4,9 @@
 .nike-heading{
     color: #FA804C;
 }
+
+@media only screen and (max-width: 1200px) {
+    .nike-h1{
+        font-size: 42px;
+    }
+}
